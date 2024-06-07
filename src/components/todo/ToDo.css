@@ -1,0 +1,52 @@
+#title-section {
+  /* background-color: red; */
+  text-align: center;
+  margin: 50px 0px;
+  color: green;
+}
+
+#input-section,
+#filter-section {
+  margin-bottom: 50px;
+}
+
+#toDoName,
+#toDoDescription {
+  outline: 1px solid rgb(92, 246, 92);
+}
+
+#btn_action {
+  width: 150px;
+}
+
+#filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(197, 235, 197);
+  border: none;
+  box-shadow: 5px 10px 18px rgb(126, 181, 126);
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin: 10px;
+  width: 100px;
+}
+
+#task-filter {
+  background-color: rgb(209, 86, 86);
+  color: white;
+}
+
+option {
+  background-color: white;
+  color: black;
+}
