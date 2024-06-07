@@ -50,3 +50,35 @@ option {
   background-color: white;
   color: black;
 }
+
+.card-text {
+  margin-top: 20px;
+}
+/* 
+select[value="Completed"] {
+  background-color: green;
+}
+select[value="Not Completed"] {
+  background-color: red;
+} */
+
+/* select[data-chosen="Completed"] {
+  background-color: green;
+}
+
+select[data-chosen="Not Completed"] {
+  background-color: red;
+}
+
+select {
+  background-color: red;
+} */
+
+/* select.Completed,
+option[value="Completed"] {
+  background: rgb(169, 206, 124);
+} */
+/* select.Not Completed,
+option[value="Not Completed"] {
+  background: rgb(226, 172, 131);
+} */

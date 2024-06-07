@@ -59,6 +59,12 @@ const ToDo = () => {
     setCurrentEditedItem((prev) => {
       return { ...prev, status: value };
     });
+    if (value === "Completed")
+      document.getElementById("card-status").style.background =
+        "rgb(169, 206, 124)";
+    else
+      document.getElementById("card-status").style.background =
+        "rgb(226, 172, 131";
   };
 
   const handleUpdateToDo = () => {
@@ -171,7 +177,10 @@ const ToDo = () => {
                     />
                     <br />
                     <label> Status: </label>
-                    <select onInput={(e) => handleUpdateStatus(e.target.value)}>
+                    <select
+                      onInput={(e) => handleUpdateStatus(e.target.value)}
+                      id="card-status"
+                    >
                       <option value={currentEditedItem.status} disabled>
                         Currently Selected: {currentEditedItem.status}
                       </option>
@@ -209,15 +218,21 @@ const ToDo = () => {
                     <p className="card-text">
                       <label>Description: {task.taskDescription}</label>
                       <br />
+                      <br />
                       <label>Status: </label>
                       <select>
-                        <option value={task.status} selected disabled>
+                        <option
+                          value={task.status}
+                          selected
+                          disabled
+                          style={{ backgroundColor: "red" }}
+                        >
                           {task.status}
                         </option>
                       </select>
                     </p>
 
-                    <div className="card-text">
+                    <div className="button-container">
                       <button
                         type="button"
                         class="btn btn-success"
